@@ -1,0 +1,75 @@
+.float-right {
+	float:right;
+}
+
+.margin-icon {
+	margin:2px 15px;
+}
+
+.textalign-center,#tbl_smart_todo th,#tbl_smart_todo td:nth-child(2),#tbl_smart_todo td:nth-child(3) {
+	text-align:center;
+}
+
+.hide {
+	display:none;
+}
+
+#tbl_smart_todo i {
+	cursor:pointer;
+}
+
+#tbl_smart_todo td,#tbl_smart_todo td a {
+	background:#FFF;
+	color:#000;
+}
+
+#tbl_smart_todo tr.active td,#tbl_smart_todo tr.active td a {
+	background:#5dff57;
+	color:#444;
+}
+
+#tbl_smart_todo tr.done td,#tbl_smart_todo tr.done td a {
+	background:#abb7ab;
+	color:#FFF;
+}
+
+#addform .addtodo {
+	background:#BBB;
+	color:#000;
+}
+
+.width-100 {
+	width:100%;
+}
+
+.margin-10-5 {
+	margin:10px 5px;
+}
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.ajaxmodal {
+	display:none;
+	position:fixed;
+	z-index:1000;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background:rgba(255,255,255,.8) url(../img/ajax-loader.gif) 50% 50% no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+	overflow:hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .ajaxmodal {
+	display:block;
+}
