@@ -1,7 +1,7 @@
 === Smart ToDo Plugin ===
 Contributors: sherkspear
 Donate link: http://www.sherkspear.com/donate/
-Tags: smart todo , tasks, timers
+Tags: smart todo , tasks, timers, todo, scrum methodology, agile development, project management, task timers
 Requires at least: 3.0.1
 Tested up to: 3.4
 Stable tag: 1.0
@@ -12,22 +12,22 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-This plugin creates Smart ToDo post types.
-Created Projects as taxonomy for Smart ToDo post types. And each Smart ToDo post types is capable of adding multiple tasks with url references. Timers are provided on each task and can be controlled with buttons to Start, Pause and setting task as Done. Also edit buttons are provided to edit task description, task url reference and time spent. Proper user's access are also given to each type of users. Total hours are provided dynamically and Title of window is set to active task with the current time spent.
+This plugin creates Smart To-do post types. Created Projects as taxonomy of Smart To-do post types. And each Smart To-do post types is capable of adding multiple tasks with url references. Timers are provided for each task and can be controlled with buttons to Start, Pause and setting task as Done. Also edit buttons are provided to edit task description, task url reference and time spent. Proper user's access is also given to each type of users. Total hours are provided dynamically and Title of the window is set to the active task with the current time spent.
 
 == Installation ==
 
 This section describes how to install the plugin and get it working.
 
-0. Backup everything before you install the plugin.
-1. Upload sc-todos directory to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Update the Permalinks on settings.
+1. Backup everything before you install the plugin.
+2. Upload sc-todos directory to the `/wp-content/plugins/` directory
+3. Activate the plugin through the 'Plugins' menu in WordPress
+4. Update the Permalinks on settings.
 
 == Frequently Asked Questions ==
 
 = Are there templates available for different views like viewed by Projects? =
-For now, this is our direction on adding templates for views that are informative for the user. We can look for 3rd party plugin that has capability of displaying certain taxonomies with its categories and posts in it.
+For now, this is our direction of adding templates for views that are informative for the user. We can look for 3rd party plugin that has the capability of displaying certain taxonomies with its categories and posts in it.
+
 
 
 
@@ -46,7 +46,7 @@ For now, this is our direction on adding templates for views that are informativ
 * An initial update with the features added.
 
 
-== A brief Markdown Example ==
+== Basic Instruction on Creating a SmartToDo ==
 
 1. Add Smart ToDo post type.
 2. Create Project category under Projects taxonomy for Smart ToDo post type.
