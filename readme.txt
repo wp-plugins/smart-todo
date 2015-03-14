@@ -1,9 +1,9 @@
 === Smart ToDo Plugin ===
 Contributors: sherkspear
 Donate link: http://www.sherkspear.com/donate/
-Tags: smart todo , tasks, timers, todo, scrum methodology, agile, project management, task timers, developer tools, timer tools
+Tags: smart todo , tasks, timers, todo, scrum methodology, agile, project management, task timers, developer tools, timer tools, scrum, team
 Requires at least: 3.0.1
-Tested up to: 3.4
+Tested up to: 4.1.1
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-This plugin creates Smart To-do post types. 
+This plugin creates Smart ToDo post types, break into tasks and categorised as Projects.
+
 
 Created Projects as taxonomy of Smart To-do post types. And each Smart To-do post types is capable of adding multiple tasks with url references.
 

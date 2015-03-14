@@ -2,7 +2,7 @@
 /*
 Plugin Name: Smart Todo
 Plugin URI: http://www.sherkspear.com/plugins/smart-todos
-Description: This plugin creates Smart ToDo post types.
+Description: This plugin creates Smart ToDo post types, break into tasks and categorized as Projects.
 Created Projects as taxonomy for Smart ToDo post types. And each Smart ToDo post types is capable of adding multiple tasks with url references. Timers are provided on each task and can be controlled with buttons to Start, Pause and setting task as Done. Also edit buttons are provided to edit task description, task url reference and time spent. Proper user's access are also given to each type of users. Total hours are provided dynamically and Title of window is set to active task with the current time spent. This is inspired from the Task Timer Google Chrome App.
 Version: 1.0
 Author: Sherwin Calims
