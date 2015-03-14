@@ -1,7 +1,7 @@
 === Smart ToDo Plugin ===
 Contributors: sherkspear
 Donate link: http://www.sherkspear.com/donate/
-Tags: smart todo , tasks, timers, todo, scrum methodology, agile development, project management, task timers
+Tags: smart todo , tasks, timers, todo, scrum methodology, agile, project management, task timers, developer tools, timer tools
 Requires at least: 3.0.1
 Tested up to: 3.4
 Stable tag: 1.0
@@ -12,7 +12,17 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-This plugin creates Smart To-do post types. Created Projects as taxonomy of Smart To-do post types. And each Smart To-do post types is capable of adding multiple tasks with url references. Timers are provided for each task and can be controlled with buttons to Start, Pause and setting task as Done. Also edit buttons are provided to edit task description, task url reference and time spent. Proper user's access is also given to each type of users. Total hours are provided dynamically and Title of the window is set to the active task with the current time spent.
+This plugin creates Smart To-do post types. 
+
+Created Projects as taxonomy of Smart To-do post types. And each Smart To-do post types is capable of adding multiple tasks with url references.
+
+Timers are provided for each task and can be controlled with buttons to Start, Pause and setting task as Done.Total hours are provided dynamically and Title of the window is set to the active task with the current time spent. Users can close the window even there are active tasks running with timers on. Users can visit their SmartToDo post with the active timers running. 
+
+Also edit buttons are provided to edit task description, task url reference and time spent. Proper user's access is also given to each type of users. 
+
+Active SmartToDo posts can be shared to all with limited access (view only access). 
+
+You can email me directly for more info: sherk_wing20@yahoo.com .
 
 == Installation ==
 
@@ -35,6 +45,9 @@ For now, this is our direction of adding templates for views that are informativ
 
 1. Frontend screenshot using a custom template.
 2. Screenshot on the frontend single post type template.
+3. Add Projects for Smart ToDo
+4. Set the Project or Projects which SmartToDo belongs.
+5. View all your Projects under Smart ToDo post types.
 
 
 == Upgrade Notice ==
