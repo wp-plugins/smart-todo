@@ -1,7 +1,7 @@
 === Smart ToDo Plugin ===
 Contributors: sherkspear
 Donate link: http://www.sherkspear.com/donate/
-Tags: smart todo , tasks, timers, todo, scrum methodology, agile, project management, task timers, developer tools, timer tools, scrum, team
+Tags: smart todo,tasks,timers,todo,scrum methodology,agile,project management,task timers, developer tools,timer tools,scrum,team,task,timer
 Requires at least: 3.0.1
 Tested up to: 4.1.1
 Stable tag: 1.0
@@ -12,18 +12,19 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-This plugin creates Smart ToDo post types, break into tasks and categorised as Projects.
+This plugin creates Smart ToDo post types, break into tasks and categorized as Projects. Timers are added on each tasks.
+Created Projects as taxonomy for Smart ToDo post types. And each Smart ToDo post types is capable of adding multiple tasks with url references.
 
+Timers are provided on each task and can be controlled with buttons to Start, Pause and setting task as Done. Also edit buttons are provided to edit task description, task url reference and time spent. Proper user's access are also given to each type of users.
 
-Created Projects as taxonomy of Smart To-do post types. And each Smart To-do post types is capable of adding multiple tasks with url references.
+Total hours are provided dynamically and Title of window is set to active task with the current time spent. This is inspired from the Task Timer Google Chrome App.
 
-Timers are provided for each task and can be controlled with buttons to Start, Pause and setting task as Done.Total hours are provided dynamically and Title of the window is set to the active task with the current time spent. Users can close the window even there are active tasks running with timers on. Users can visit their SmartToDo post with the active timers running. 
-
-Also edit buttons are provided to edit task description, task url reference and time spent. Proper user's access is also given to each type of users. 
-
-Active SmartToDo posts can be shared to all with limited access (view only access). 
 
 You can email me directly for more info: sherk_wing20@yahoo.com .
+
+
+Plugin URI: http://www.sherkspear.com/portfolio-item/smart-todo-wordpress-plugin/
+
 
 == Installation ==
 
