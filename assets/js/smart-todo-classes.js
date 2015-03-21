@@ -114,10 +114,10 @@ var SmartToDoHTML = function() {
 			var hidePlay = (status != 'active' ? '' : 'hide');
 			var hidePause = (status == 'active' ? '' : 'hide');
 			var hideDone = (status == 'done' ? 'hide' : '');
-			var actionHtml = '<i class="icon-small icon-play margin-icon ' + hidePlay + '"></i><i class="icon-small icon-pause margin-icon ' + hidePause + '"></i><i class="icon-small icon-ok margin-icon ' + hideDone + '"></i>';
-			var editTaskButtons='<i class="edit-task icon-small icon-pencil"></i><i class="margin-icon edit-url icon-small icon-globe"></i><i class="margin-icon edit-time-used icon-small icon-time"></i>';
+			var actionHtml = '<i class="dashicons-controls-play dashicons margin-icon ' + hidePlay + '"></i><i class="dashicons-controls-pause dashicons margin-icon ' + hidePause + '"></i><i class="dashicons-yes dashicons margin-icon ' + hideDone + '"></i>';
+			var editTaskButtons='<i class="edit-task dashicons dashicons-edit"></i><i class="margin-icon edit-url dashicons dashicons-admin-site"></i><i class="margin-icon edit-time-used dashicons dashicons-clock"></i>';
 			if(access==false){
-				actionHtml='<i class="icon-small icon-warning-sign"></i>';
+				actionHtml='<i class="dashicons dashicons-visibility"></i>';
 				editTaskButtons='';
 				$('#addform').hide();
 			}
@@ -152,8 +152,8 @@ var SmartToDoHTML = function() {
 			var hidePlay = (status != 'active' ? '' : 'hide');
 			var hidePause = (status == 'active' ? '' : 'hide');
 			var hideDone = (status == 'done' ? 'hide' : '');
-			var actionHtml = '<i class="icon-small icon-play margin-icon ' + hidePlay + '"></i><i class="icon-small icon-pause margin-icon ' + hidePause + '"></i><i class="icon-small icon-ok margin-icon ' + hideDone + '"></i>';
-			var rowHtml = sortTitle+'<span class="smart_todo_data" status="' + smartToDo.getStatus() + '">' + this.getDescHtml(smartToDo) + '</span><br/><i class="edit-task icon-small icon-pencil"></i><i class="margin-icon edit-url icon-small icon-globe"></i><i class="margin-icon edit-time-used icon-small icon-time"></i>';
+			var actionHtml = '<i class="dashicons-controls-play dashicons margin-icon ' + hidePlay + '"></i><i class="dashicons-controls-pause dashicons margin-icon ' + hidePause + '"></i><i class="dashicons-yes dashicons margin-icon ' + hideDone + '"></i>';
+			var rowHtml = sortTitle+'<span class="smart_todo_data" status="' + smartToDo.getStatus() + '">' + this.getDescHtml(smartToDo) + '</span><br/><i class="edit-task dashicons dashicons-edit"></i><i class="margin-icon edit-url dashicons dashicons-admin-site"></i><i class="margin-icon edit-time-used dashicons dashicons-clock"></i>';
 			var time_start = smartToDo.getTimeStart();
 			rowTbl = '#' + time_start;
 			var rowIndex = $(rowTbl).attr('row');
@@ -461,7 +461,7 @@ var SmartToDoMain = function() {
 			smartToDoController.clickEditTimeUsed(closesttrid);
 			e.preventDefault();
 		}); /*click active ToDo*/
-		$(document).on('click', '.icon-play', function(e) {
+		$(document).on('click', '.dashicons-controls-play', function(e) {
 			var closesttrid = $(this).closest('tr');
 			var activeTimeStarted = $('#tbl_smart_todo').attr('active');
 			activeRowTbl = '#' + activeTimeStarted;
@@ -474,13 +474,13 @@ var SmartToDoMain = function() {
 			$(closesttrid).removeClass('done');
 			e.preventDefault();
 		}); /*click stop ToDo*/
-		$(document).on('click', '.icon-pause', function(e) {
+		$(document).on('click', '.dashicons-controls-pause', function(e) {
 			var closesttrid = $(this).closest('tr');
 			smartToDoController.clickStopTime(closesttrid);
 			$('#tbl_smart_todo').removeAttr('active');
 			e.preventDefault();
 		}); /*click done ToDo*/
-		$(document).on('click', '.icon-ok', function(e) {
+		$(document).on('click', '.dashicons-yes', function(e) {
 			var closesttrid = $(this).closest('tr');
 			$(closesttrid).addClass('done');
 			if ($(closesttrid).attr('status') == 'active') {

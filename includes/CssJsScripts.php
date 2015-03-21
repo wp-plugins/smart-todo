@@ -29,11 +29,9 @@ class SmartToDoLoadScripts {
 		if(get_post_type()=='smart_todo'){
 			wp_register_style('smart-todo-styles', SmartTodoInfo::get_plugin_url().'assets/css/style.css', array(), '20121224', 'all' );
 			wp_register_style('dataTables-styles', SmartTodoInfo::get_plugin_url().'assets/dbtables/media/css/jquery.dataTables.css', array(), '1', 'all' );
-			wp_register_style('bootstrap-icons', SmartTodoInfo::get_plugin_url().'assets/css/bootstrap.css', array(), '1', 'all' );
 
 			wp_enqueue_style('smart-todo-styles');
 			wp_enqueue_style('dataTables-styles');
-			wp_enqueue_style('bootstrap-icons');
 
 			wp_enqueue_script('jquery');
 			wp_enqueue_script('datatables-js', SmartTodoInfo::get_plugin_url().'assets/dbtables/media/js/jquery.dataTables.js', array(), '', false);

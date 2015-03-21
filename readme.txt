@@ -1,7 +1,7 @@
 === Smart ToDo Plugin ===
 Contributors: sherkspear
 Donate link: http://www.sherkspear.com/donate/
-Tags: smart todo,tasks,timers,todo,scrum methodology,agile,project management,task timers, developer tools,timer tools,scrum,team,task,timer
+Tags: smart todo, tasks, timers, todo, scrum methodology, agile, project management, task timers, developer tools,timer tools,scrum,team,task,timer
 Requires at least: 3.0.1
 Tested up to: 4.1.1
 Stable tag: 1.0
@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-This plugin creates Smart ToDo post types, break into tasks and categorized as Projects. Timers are added on each tasks.
+This plugin creates Smart ToDo post types, todos are broken into tasks and categorized as Projects. Timers are added on each tasks.
 Created Projects as taxonomy for Smart ToDo post types. And each Smart ToDo post types is capable of adding multiple tasks with url references.
 
 Timers are provided on each task and can be controlled with buttons to Start, Pause and setting task as Done. Also edit buttons are provided to edit task description, task url reference and time spent. Proper user's access are also given to each type of users.
@@ -45,26 +45,32 @@ For now, this is our direction of adding templates for views that are informativ
 
 == Screenshots ==
 
-1. Frontend screenshot using a custom template.
-2. Screenshot on the frontend single post type template.
-3. Add Projects for Smart ToDo
-4. Set the Project or Projects which SmartToDo belongs.
-5. View all your Projects under Smart ToDo post types.
-
+1. Smart ToDo Post type
+2. Add new Smart ToDo entry.
+3. Add new Projects for Smart ToDo
+4. View Smart ToDo entry with empty Smart Task table and form.
+5. Tasks are now in action with Done tasks and active task with the controllers.
+6. Logged out users view. Access are not given though they are able to see which tasks are done and currently active.
 
 == Upgrade Notice ==
 
 
 == Changelog ==
 
+= 1.01 =
+* Bootstrap icons are replaced with Dashicons
+
 = 1.0 =
 * An initial update with the features added.
+
+
 
 
 == Basic Instruction on Creating a SmartToDo ==
 
 1. Add Smart ToDo post type.
 2. Create Project category under Projects taxonomy for Smart ToDo post type.
-2. Add tasks on each ToDo with or without url references.
-3. When task is started to work on you can click start timer, pause and set the task to done.
-4. You can edit the task's description, edit url reference and also the time spent.
+3. Add title and description on the ToDo and save.
+4. To add tasks on each ToDo, visit the ToDo at View ToDo and start adding tasks with or without url references.
+5. When task is started to work on you can click start timer, pause and set the task to done.
+6. You can edit the task's description, edit url reference and also the time spent.
