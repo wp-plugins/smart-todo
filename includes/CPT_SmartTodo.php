@@ -8,9 +8,44 @@ class SmartTodo {
 		add_action( 'init', array($this, 'register_cpt_smart_todo'));
 		add_action( 'init', array($this, 'register_smart_todo_taxonomies'));
 		add_filter( 'the_content', array($this, 'sc_todo_content'));
+		
+		add_filter('manage_smart_todo_posts_columns', array($this,'columns_head_smart_todo'), 10);
+		add_action('manage_smart_todo_posts_custom_column', array($this,'columns_content_smart_todo'), 10, 2);
 
 		new SmartToDoHelper();
 	}
+	
+	function columns_head_smart_todo($defaults) {
+		$defaults['projects'] = 'Projects';
+		$defaults['status'] = 'Status';
+		return $defaults;
+	}
+	 
+	// CUSTOM POSTS
+	function columns_content_smart_todo($column_name, $smart_todo_id) {
+	    global $post;
+		if ($column_name == 'status') {
+		    $meta_smart_todo=get_post_meta( $smart_todo_id, '_smart_todo', true);
+			if ((strpos($meta_smart_todo,'"status":"hold"') !== false) ||
+				(strpos($meta_smart_todo,'"status":"active"') !== false)) {
+				echo 'Open';
+			}else{
+			    echo 'Closed';
+			}
+		     
+		}else if ($column_name == 'projects') {
+		    $terms = get_the_terms($smart_todo_id, 'smart_project' );
+			if ($terms && ! is_wp_error($terms)) :
+				$term_slugs_arr = array();
+				foreach ($terms as $term) {
+					$projects = ' <a href="'.get_term_link($term->slug,'smart_project').'" target="_blank">'.$term->name.'</a> ';
+				}
+				
+			endif;
+			echo $projects;
+		}
+	}
+ 
 
 
 
@@ -35,7 +70,7 @@ class SmartTodo {
 			'labels' => $labels,
 			'hierarchical' => false,
 			'description' => 'Creates a smart todo custom post types which will allow you to add list of todos.',
-			'supports' => array( 'title', 'editor', 'author', 'comments' ),
+			'supports' => array( 'title', 'editor', 'author', 'comments','post-formats' ),
 			'taxonomies' => array( 'smart_project', 'post_tag' ),
 			'public' => true,
 			'show_ui' => true,
@@ -80,7 +115,7 @@ class SmartTodo {
 	 */
 	function sc_todo_content($content) {
 		global $post;
-		if ($post->post_type=='smart_todo') {
+		if ($post->post_type=='smart_todo' && is_single($post)) {
 			include(SmartTodoInfo::get_plugin_uri().'templates/single-smart_todo-content.php');
 			return ob_get_clean();
 		}else{

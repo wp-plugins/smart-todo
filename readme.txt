@@ -17,6 +17,8 @@ Created Projects as taxonomy for Smart ToDo post types. And each Smart ToDo post
 
 Timers are provided on each task and can be controlled with buttons to Start, Pause and setting task as Done. Also edit buttons are provided to edit task description, task url reference and time spent. Proper user's access are also given to each type of users.
 
+SmartToDos manage page has columns for Projects and Status of the ToDo if it's Open or already Closed.
+
 Total hours are provided dynamically and Title of window is set to active task with the current time spent. This is inspired from the Task Timer Google Chrome App.
 
 
@@ -51,11 +53,16 @@ For now, this is our direction of adding templates for views that are informativ
 4. View Smart ToDo entry with empty Smart Task table and form.
 5. Tasks are now in action with Done tasks and active task with the controllers.
 6. Logged out users view. Access are not given though they are able to see which tasks are done and currently active.
+7. Columns Projects and Status at Manage Smart ToDos page.
 
 == Upgrade Notice ==
 
 
 == Changelog ==
+
+= 1.02 =
+* Added Projects and Status on Smart ToDos Manage Tables
+* Fixed bug on Projects view
 
 = 1.01 =
 * Bootstrap icons are replaced with Dashicons
