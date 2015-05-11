@@ -4,7 +4,7 @@ Donate link: http://www.sherkspear.com/donate/
 Tags: smart todo, tasks, timers, todo, scrum methodology, agile, project management, task timers, developer tools,timer tools,scrum,team,task,timer
 Requires at least: 3.0.1
 Tested up to: 4.1.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -59,6 +59,9 @@ For now, this is our direction of adding templates for views that are informativ
 
 
 == Changelog ==
+
+= 1.1 =
+* How To Use menu page is added
 
 = 1.02 =
 * Added Projects and Status on Smart ToDos Manage Tables
