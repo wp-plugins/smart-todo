@@ -22,9 +22,6 @@ SmartToDos manage page has columns for Projects and Status of the ToDo if it's O
 Total hours are provided dynamically and Title of window is set to active task with the current time spent. This is inspired from the Task Timer Google Chrome App.
 
 
-You can email me directly for more info: sherk_wing20@yahoo.com .
-
-
 Plugin URI: http://www.sherkspear.com/portfolio-item/smart-todo-wordpress-plugin/
 
 
