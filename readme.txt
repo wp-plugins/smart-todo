@@ -13,6 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Description ==
 
 This plugin creates Smart ToDo post types, todos are broken into tasks and categorized as Projects. Timers are added on each tasks.
+
 Created Projects as taxonomy for Smart ToDo post types. And each Smart ToDo post types is capable of adding multiple tasks with url references.
 
 Timers are provided on each task and can be controlled with buttons to Start, Pause and setting task as Done. Also edit buttons are provided to edit task description, task url reference and time spent. Proper user's access are also given to each type of users.
@@ -21,18 +22,30 @@ SmartToDos manage page has columns for Projects and Status of the ToDo if it's O
 
 Total hours are provided dynamically and Title of window is set to active task with the current time spent. This is inspired from the Task Timer Google Chrome App.
 
+You can email me directly for any plugin request or personal modification such as styles and templates at <contact@sherkspear.com> or contact me at <http://sherkspear.com/contact>
 
-Plugin URI: http://www.sherkspear.com/portfolio-item/smart-todo-wordpress-plugin/
+Plugin URI: <http://www.sherkspear.com/portfolio-item/smart-todo-wordpress-plugin/>    
+Demo Page: <http://www.sherkspear.com/smart_todo/add-pages-to-sherkspear-for-plugins-as-portfolio/>
 
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+<h3>This section describes how to install the plugin and get it working.</h3>
 
 1. Backup everything before you install the plugin.
 2. Upload sc-todos directory to the `/wp-content/plugins/` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. Update the Permalinks on settings.
+
+<h3>Basic Instruction on Creating a SmartToDo</h3>
+
+1. Add Smart ToDo post type.
+2. Create Project category under Projects taxonomy for Smart ToDo post type.
+3. Add title and description on the ToDo and save.
+4. To add tasks on each ToDo, **visit the ToDo at View ToDo** and start adding tasks with or without url references.
+5. When task is started to work on you can click start timer, pause and set the task to done.
+6. You can edit the task's description, edit url reference and also the time spent.
+
 
 == Frequently Asked Questions ==
 
@@ -71,13 +84,10 @@ For now, this is our direction of adding templates for views that are informativ
 * An initial update with the features added.
 
 
+== Detailed Instruction==
 
+After installing the plugin you will find   
+*Detailed instruction at*    
+**Dashboard-> SmartToDos->How To Use**    
+`/wp-admin/edit.php?post_type=smart_todo&page=smarttodo_info`
 
-== Basic Instruction on Creating a SmartToDo ==
-
-1. Add Smart ToDo post type.
-2. Create Project category under Projects taxonomy for Smart ToDo post type.
-3. Add title and description on the ToDo and save.
-4. To add tasks on each ToDo, visit the ToDo at View ToDo and start adding tasks with or without url references.
-5. When task is started to work on you can click start timer, pause and set the task to done.
-6. You can edit the task's description, edit url reference and also the time spent.
